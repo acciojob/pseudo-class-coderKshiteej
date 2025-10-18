@@ -1,21 +1,11 @@
-#container {
-  margin: 20px;
-  font-size: 20px;
-  font-family: Arial, sans-serif;
-  color: black;
-  display: inline-block;
-  position: relative;
-}
-
-/* Insert first two red words before */
 #container::before {
-  content: "Before Element ";
+  content: "Before Element"; /* ✅ no trailing space */
   color: #f00;
-	font-size:20px
+  font-size: 20px;
 }
 
-/* Insert last two red words after */
 #container::after {
-  content: " After Element";
+  content: "After Element"; /* ✅ no leading space */
   color: #f00;
+  font-size: 20px;
 }
