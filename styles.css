@@ -1,1 +1,21 @@
-/*  your css code here. If applicable */
+#container {
+  margin: 20px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: black;
+  display: inline-block;
+  position: relative;
+}
+
+/* Insert first two red words before */
+#container::before {
+  content: "Before Element ";
+  color: #f00;
+	font-size:20px
+}
+
+/* Insert last two red words after */
+#container::after {
+  content: " After Element";
+  color: #f00;
+}
